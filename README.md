@@ -1,3 +1,4 @@
+<!-- Inline HTML that changes the banner image based on the chosen theme on GitHub -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./images/banner-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="images/banner-light.png">
