@@ -14,6 +14,8 @@
 - [Breakdown: Architecture](#architecture)
 - [JavaScript Style Guide](./JavaScriptStyleGuide.md)
 - [Ethical Web Development Principles](#ethical-web-development-principles)
+- [License](#license)
+- [Authours](#authors)
 
 ## The Village Organisation
 
@@ -145,6 +147,10 @@ We are mindful that:
 - Web developers should be considerate of peers
 
 [Click: Web Development Reading](./documentation/Ethical-Web-Development-Principles.pdf)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ## Authors
 
