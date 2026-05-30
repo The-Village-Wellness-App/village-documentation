@@ -127,6 +127,8 @@ The app design was sketched out via wireframes in order to decide on how feature
 
 ## JavaScript Style Guide
 
+The JavaScript Style Guide was written to ensure consistent coding across documents, and repositories:
+
 [JavaScript Style Guide](./JavaScriptStyleGuide.md)
 
 ## Ethical Web Development Principles
