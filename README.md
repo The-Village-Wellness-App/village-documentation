@@ -15,8 +15,7 @@
 - [JavaScript Style Guide](./JavaScriptStyleGuide.md)
 - [Ethical Web Development Principles](#ethical-web-development-principles)
 - [License](#license)
-- [Authou
-rs](#authors)
+- [Authors](#authors)
 
 ## The Village Organisation
 
@@ -33,7 +32,7 @@ The application also allows users to add event markers to their timeline, such a
 
 ## Documentation Cheatsheet
 
-TL;DR: You can find a 'Mega doc' of all project planning [documentation here.](./documentation/MegaDoc-Documentation.pdf)
+TL;DR: You can find a 'Mega doc' of all project planning [documentation here.](./documentation/megadoc-documentation.pdf)
 
 ## Architecture
 
@@ -41,19 +40,19 @@ TL;DR: You can find a 'Mega doc' of all project planning [documentation here.](.
 
 Placeholder
 
-[Click: Programming Paradigm](./documentation/Paradigm-and-Architecture.pdf)
+[Click: Programming Paradigm](./documentation/paradigm-and-architecture.pdf)
 
 ### Application Architecture
 
 Placeholder
 
-[Click: Application Architecture](./documentation/How-The-Village%20uses-Client-Server-Architecture.pdf)
+[Click: Application Architecture](./documentation/how-the-village-uses-client-server-architecture.pdf)
 
 ### Client / Server Architecture
 
 Placeholder
 
-[Click: Client / Server Architecture](./documentation/Client-Server-Architecture-Explained.pdf)
+[Click: Client / Server Architecture](./documentation/client-server-architecture-explained.pdf)
 
 ### Software Development Methodologies
 
@@ -67,7 +66,7 @@ Task Management Methodologies
 - Kanban
 - Scrum
 
-[Click: Software Development Methodologies](./documentation/Software-Development-Methodologies.pdf)
+[Click: Software Development Methodologies](./documentation/software-development-methodologies.pdf)
 
 ## Branding & Collateral
 
@@ -80,53 +79,53 @@ The intention for The Village branding was:
 - Safe
 - Online Village
 
-![Original Village Design](./collateral/Original-MockUp.png)
+![Original Village Design](./collateral/original-mockup.png)
 
 ### Brand Guide
 
 The brand guide was developed to ensure that there was a consistent style across documentation and the frontend application:
 
-![The Village Brand Guide](./collateral/Brand-Guide-The-Village.png)
+![The Village Brand Guide](./collateral/brand-guide-the-village.png)
 
 ### Branding Banner
 
 The banner for The Village is utilised on all GitHub, application, and documentation entities, to ensure consisitent messaging, and colouring:
 
-![The Village Banner](./collateral/Banner-The-Village.png)
+![The Village Banner](./collateral/banner-the-village.png)
 
 ### Personas
 
 The purpose of the app was examined thorugh the use of personas - these personas helped to articulate what the app should do, and who the app is intended for:
 
-![Priya - Persona for The Village](./collateral/Persona1.png)
+![Priya - Persona for The Village](./collateral/persona1.png)
 
-![Marc - Persona for The Village](./collateral/Persona2.png)
+![Marc - Persona for The Village](./collateral/persona2.png)
 
-![Destiny - Persona for The Village](./collateral/Persona3.png)
+![Destiny - Persona for The Village](./collateral/persona3.png)
 
-![Selwyn - Persona for The Village](./collateral/Persona4.png)
+![Selwyn - Persona for The Village](./collateral/persona4.png)
 
 ### Entity Relationship Diagram
 
 The ERD describes the relationships between entities within the MongoDB database:
 
-![ERD for The Village](./collateral/ERD-Relationship-Table.png)
+![ERD for The Village](./collateral/erd-relationship-table.png)
 
 ### Wireframes
 
 The app design was sketched out via wireframes in order to decide on how features would work, and what the general look of the app will be:
 
-![XL Wireframe](./collateral/XL-Wireframe-The-Village.png)
+![XL Wireframe](./collateral/xl-wireframe-the-village.png)
 
-![L Wireframe](./collateral/L-Wireframe-The-Village.png)
+![L Wireframe](./collateral/l-wireframe-the-village.png)
 
-![M Wireframe](./collateral/M-Wireframe-The-Village.png)
+![M Wireframe](./collateral/m-wireframe-the-village.png)
 
-![S1 Wireframe](./collateral/S1-Wireframe-The-Village.png)
+![S1 Wireframe](./collateral/s1-wireframe-the-village.png)
 
-![S2 Wireframe](./collateral/S2-Wireframe-The-Village.png)
+![S2 Wireframe](./collateral/s2-wireframe-the-village.png)
 
-![XS Wireframe](./collateral/XS-Wireframe-The-Village.png)
+![XS Wireframe](./collateral/xs-wireframe-the-village.png)
 
 ## JavaScript Style Guide
 
@@ -147,7 +146,7 @@ We are mindful that:
 - Web applications should respect users privacy and security
 - Web developers should be considerate of peers
 
-[Click: Web Development Reading](./documentation/Ethical-Web-Development-Principles.pdf)
+[Click: Web Development Reading](./documentation/ethical-web-development-principles.pdf)
 
 ## License
 
