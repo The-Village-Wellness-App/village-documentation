@@ -90,7 +90,7 @@ const numbers = 1 + 3 - 5
 
 ### Indentation
 
-Each new indentation is one 'tab' which equates to 4 spaces in most environments or editors, though it might equate to 2 when using extensions such as 'prettier' to format code.
+Each new indentation is two spaces, you can maintain this convention across code, by using formatting extensions such as 'prettier'.
 
 ```js
 const getUsersName = () => {
