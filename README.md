@@ -12,7 +12,7 @@
 - [Overview of Documentation](#documentation-cheatsheet)
 - [Breakdown: Branding & Collateral](#branding--collateral)
 - [Breakdown: Architecture](#architecture)
-- [JavaScript Style Guide](./JavaScriptStyleGuide.md)
+- [JavaScript Style Guide](./javascript-style-guide.md)
 - [Ethical Web Development Principles](#ethical-web-development-principles)
 - [License](#license)
 - [Authors](#authors)
