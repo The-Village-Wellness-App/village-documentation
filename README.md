@@ -15,7 +15,8 @@
 - [JavaScript Style Guide](./JavaScriptStyleGuide.md)
 - [Ethical Web Development Principles](#ethical-web-development-principles)
 - [License](#license)
-- [Authours](#authors)
+- [Authou
+rs](#authors)
 
 ## The Village Organisation
 
