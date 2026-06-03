@@ -1,159 +1,184 @@
-# JaveScript Style Guide
+# JavaScript Style Guide
 
-> This Style Guide includes coding conventions for programming with JavaScript.
+> This style guide reflects the project's ESLint conventions
 
-## Name Case
+## Naming Conventions
 
 ### Variables and Functions
 
-The village uses camelCase for variables and functions, meaning that the first word is lower case, additional words are title case, and there is no space between words.
+The Village uses camelCase for variables and functions. The first word is lowercase, additional words start with an uppercase letter, and there are no spaces between words.
 
-When the variable name is a singular word this can remain all lowercase.
-
-### **DO**
+### DO
 
 ```js
 const firstName = "Brando";
 ```
 
-#### DON'T
+### DON'T
 
 ```js
 const firstname = "Brando";
-```
-
-```js
 const FirstName = "Brando";
 ```
 
 ### File Names
 
-Files other than README and LICENSE will use lower case at all times.
+Files other than README and LICENSE use lowercase names at all times.
 
-## Naming Variable & Functions
+## Naming Variables and Functions
 
-Variable and function names are un-obscured, ensuring that the name describes exactly what the variable/function does.
+Use descriptive names that explain the purpose of the variable or function.
 
-### **DO**
+### DO
 
 ```js
 function getUserProfile(userId) {
   const user = {
     id: userId,
     name: "Brando",
-    email: "brando@example.com"
+    email: "brando@example.com",
   };
 
   return user;
 }
 ```
 
-#### DON't
+### DON'T
 
 ```js
 function user(userId) {
   const user = {
     id: userId,
     name: "Brando",
-    email: "brando@example.com"
+    email: "brando@example.com",
   };
 
   return user;
 }
 ```
 
-## Declaring Variables & Functions
+## Declaring Variables and Functions
 
-Variables and functions will be declared locally at all times. Variables and functions will be declared with 'const' wherever possible, occasionally they may be declared with 'let', but never 'var'.
+Declare variables and functions locally whenever possible. Prefer `const` for values that do not change, use `let` only when reassignment is required, and never use `var`.
 
 ## Code Blocks
 
-Multiple lines of code will be contained within curly braces { }.
+Use braces for multi-line control structures, loops, and function bodies.
 
 ```js
-const = pain {
-    location: "knee",
-    rating: 5,
-    day: Monday,
-};
+if (user) {
+  return user.name;
+}
 ```
 
-## Indentations and Spacing
+## Indentation and Spacing
 
 ### Spacing
 
-The Village allows for a space on either side of operators such as +-*/=.
+Use spaces around operators such as `+`, `-`, `*`, `/`, and `=`.
 
 ```js
-const numbers = 1 + 3 - 5
+const numbers = 1 + 3 - 5;
 ```
 
 ### Indentation
 
-Each new indentation is two spaces, you can maintain this convention across code, by using formatting extensions such as 'prettier'.
+Use two spaces for indentation. Keep formatting consistent with ESLint and Prettier.
 
 ```js
-const getUsersName = () => {
-    if (user) {
-        return user.name
-    }
+const getUserName = () => {
+  if (user) {
+    return user.name;
+  }
+
+  return "Unknown";
 };
 ```
 
 ## Semicolons
 
-Semicolons are used to end each statement.
+Use semicolons at the end of statements to keep the code consistent and ESLint-friendly.
 
 ```js
-const events = [break-up, job-promotion, holiday];
-
-const moods = [happy, sad, frustrated, overwhelmed];
+const events = ["break-up", "job-promotion", "holiday"];
+const moods = ["happy", "sad", "frustrated", "overwhelmed"];
 ```
 
 ## Formatting
 
 ### Line Length
 
-The project aims to keep the length of lines <80 characters where possible.
-
-Long lines are structured more closely to the left of the IDE.
+Keep lines under 80 characters when practical. Break long lines into smaller, easier-to-read lines.
 
 ### Vertical Readability
 
-The Village ensures vertical readability - seperating seperate lines of codes.
+Write one statement per line and separate logical blocks with blank lines when needed.
 
-### **DO**
+### DO
 
 ```js
-const = user {
-    firstName: "Wayne",
-    lastName: "Campbell",
-    age: 50,
-    role: "Admin"
+const user = {
+  firstName: "Wayne",
+  lastName: "Campbell",
+  age: 50,
+  role: "Admin",
 };
 ```
 
-#### DON'T
+### DON'T
 
 ```js
-const = user {firstName: "Wayne", lastName: "Campbell", age: 50, role: "Admin"
-};
+const user = { firstName: "Wayne", lastName: "Campbell", age: 50, role: "Admin" };
 ```
 
-### Comments
+## Comments
 
-Comments are 'why-centric' - explaining why code choices have been made, rather than just explaining what the code does.
+Write comments to explain why a decision was made, not just what the code does.
 
-### **DO**
+### DO
 
 ```js
-// Store a hash instead of the plaintext password to protect user credentials if the database is compromised
-const hashedPassword = await bcrypt.hash(password, 10);
+const crypto = require("node:crypto");
+
+// Store a salted hash with Node's crypto module to protect user credentials.
+const hashedPassword = crypto
+  .scryptSync(password, salt, 64)
+  .toString("hex");
 ```
 
-#### DON'T
+### DON'T
 
 ```js
-// Hash the user's password
-const hashedPassword = await bcrypt.hash(password, 10);
+const crypto = require("node:crypto");
+
+// Hash the user's password.
+const hashedPassword = crypto
+  .scryptSync(password, salt, 64)
+  .toString("hex");
+```
+
+## Password Hashing Example
+
+Use Node's built-in crypto module for password hashing and salting.
+
+```js
+const crypto = require("node:crypto");
+
+function generateSalt() {
+  return crypto.randomBytes(64).toString("hex");
+}
+
+UserSchema.pre("save", function (next) {
+  if (!this.salt) {
+    this.salt = generateSalt();
+  }
+
+  if (!this.isModified("password")) return next();
+
+  this.password = crypto
+    .scryptSync(this.password, this.salt, 64)
+    .toString("hex");
+
+  next();
+});
 ```

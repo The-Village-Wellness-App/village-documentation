@@ -38,21 +38,16 @@ TL;DR: You can find a 'Mega doc' of all project planning [documentation here.](.
 
 ### Programming Paradigm
 
-Placeholder
+The Village app uses a hybrid programming paradigm of functional and data-oriented with limited lightweight object-oriented patterns (objects + instance methods/hook behavior) in the Mongoose model layer.
 
 [Click: Programming Paradigm](./documentation/paradigm-and-architecture.pdf)
 
 ### Application Architecture
 
-Placeholder
+The Village is built using a client/server architecture typical of the MERN stack. The client
+side consists of a React single page application, the server-side is a Node.js application and built using the Express framework. The database is MongoDB.
 
 [Click: Application Architecture](./documentation/how-the-village-uses-client-server-architecture.pdf)
-
-### Client / Server Architecture
-
-Placeholder
-
-[Click: Client / Server Architecture](./documentation/client-server-architecture-explained.pdf)
 
 ### Software Development Methodologies
 
