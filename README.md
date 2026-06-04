@@ -34,6 +34,19 @@ The application also allows users to add event markers to their timeline, such a
 
 TL;DR: You can find a 'Mega doc' of all project planning [documentation here.](./documentation/megadoc-documentation.pdf)
 
+## Hardware Requirements
+
+This project is a standard MERN application, so the minimum hardware requirements are:
+
+- 8 GB RAM or more
+- at least 10 GB of free storage space
+- an Intel i5 / AMD Ryzen 5 class processor or better
+- a functioning laptop or desktop computer
+- a modern web browser for using the application
+- a working internet connection for development, testing, and dependency installation
+
+A basic development machine is sufficient for running and working on this project.
+
 ## Architecture
 
 ### Programming Paradigm
