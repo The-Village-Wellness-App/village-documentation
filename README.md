@@ -34,25 +34,33 @@ The application also allows users to add event markers to their timeline, such a
 
 TL;DR: You can find a 'Mega doc' of all project planning [documentation here.](./documentation/megadoc-documentation.pdf)
 
+## Hardware Requirements
+
+This project is a standard MERN application, so the minimum hardware requirements are:
+
+- 8 GB RAM or more
+- at least 10 GB of free storage space
+- an Intel i5 / AMD Ryzen 5 class processor or better
+- a functioning laptop or desktop computer
+- a modern web browser for using the application
+- a working internet connection for development, testing, and dependency installation
+
+A basic development machine is sufficient for running and working on this project.
+
 ## Architecture
 
 ### Programming Paradigm
 
-Placeholder
+The Village app uses a hybrid programming paradigm of functional and data-oriented with limited lightweight object-oriented patterns (objects + instance methods/hook behavior) in the Mongoose model layer.
 
 [Click: Programming Paradigm](./documentation/paradigm-and-architecture.pdf)
 
 ### Application Architecture
 
-Placeholder
+The Village is built using a client/server architecture typical of the MERN stack. The client
+side consists of a React single page application, the server-side is a Node.js application and built using the Express framework. The database is MongoDB.
 
 [Click: Application Architecture](./documentation/how-the-village-uses-client-server-architecture.pdf)
-
-### Client / Server Architecture
-
-Placeholder
-
-[Click: Client / Server Architecture](./documentation/client-server-architecture-explained.pdf)
 
 ### Software Development Methodologies
 
