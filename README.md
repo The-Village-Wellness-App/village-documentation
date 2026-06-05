@@ -129,6 +129,8 @@ The app design was sketched out via wireframes in order to decide on how feature
 
 ## JavaScript Style Guide
 
+This project use ESLint.
+
 The JavaScript Style Guide was written to ensure consistent coding across documents, and repositories:
 
 [Click: JavaScript Style Guide](./javascript-style-guide.md)
@@ -146,7 +148,7 @@ We are mindful that:
 - Web applications should respect users privacy and security
 - Web developers should be considerate of peers
 
-[Click: Web Development Reading](./documentation/ethical-web-development-principles.pdf)
+[Click: Web Development Principles](./documentation/ethical-web-development-principles.pdf)
 
 ## License
 
